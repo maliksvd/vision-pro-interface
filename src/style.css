@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url(./assets/blur.png);
+  @apply h-screen;
+  @apply bg-no-repeat bg-center bg-cover;
+}
+
+.main-card {
+  @apply max-w-5xl mx-auto h-96;
+  @apply flex;
+  @apply rounded-3xl;
+  border: 1px solid var(--outline-1, rgba(222, 222, 222, 0.2));
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.12),
+    0px 0px 2px 0px rgba(255, 255, 255, 0.8) inset;
+  backdrop-filter: blur(80px);
+}
+
+.left-side {
+  @apply flex flex-col;
+  @apply justify-start;
+  @apply px-8 py-8;
+  @apply w-56;
+  @apply rounded-l-3xl;
+  @apply bg-[#7878784D];
+}
+
+.right-side {
+  @apply rounded-3xl;
+}
