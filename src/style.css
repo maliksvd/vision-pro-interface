@@ -13,8 +13,7 @@ body {
   @apply flex;
   @apply rounded-3xl;
   border: 1px solid var(--outline-1, rgba(222, 222, 222, 0.2));
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.12),
-    0px 0px 2px 0px rgba(255, 255, 255, 0.8) inset;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.12), 0px 0px 2px 0px rgba(255, 255, 255, 0.8) inset;
   backdrop-filter: blur(80px);
 }
 
@@ -33,12 +32,45 @@ body {
 }
 
 #user-category li {
+  @apply cursor-pointer;
+  @apply px-1.5 py-1.5 w-full;
+  @apply rounded-xl;
+}
+
+#user-category a {
   @apply text-white text-sm font-light;
   @apply cursor-pointer;
-  @apply mb-4;
-  @apply flex items-center;
+  @apply flex items-center content-center;
+  @apply px-1.5 py-1.5 w-full;
+  @apply rounded-xl;
+  @apply transition-all duration-300;
 }
 
 #user-category svg {
   @apply w-4 h-4 mr-2;
+}
+
+#user-category li:hover {
+  @apply text-white bg-[#C2BEBB];
+  @apply rounded-xl;
+  @apply px-1.5 py-1.5;
+}
+
+#user-category .is-active {
+  @apply text-white bg-[#C2BEBB];
+  @apply rounded-xl;
+  @apply px-1.5 py-1.5;
+}
+
+.playlists {
+  @apply m-8;
+  @apply w-full;
+}
+.playlists ul {
+  @apply grid grid-cols-4 gap-4;
+}
+
+.playlists img {
+  @apply rounded-lg;
+  @apply h-32 w-32;
 }

@@ -16,25 +16,48 @@ import IconsUser from "./components/Icons/User.vue";
         </div>
         <div>
           <ul id="user-category">
-            <li>
-              <IconsClock />Recently Added
+            <li class="is-active">
+              <a href="#">
+                <IconsClock />Recently Added
+              </a>
             </li>
             <li>
-              <IconsMicro />Artists
+              <a href="#">
+                <IconsMicro />Artists
+              </a>
             </li>
             <li>
-              <IconsFolder />Albums
+              <a href="#">
+                <IconsFolder />Albums
+              </a>
             </li>
             <li>
-              <IconsMusic /> Songs
+              <a href="#">
+                <IconsMusic /> Songs
+              </a>
             </li>
             <li>
-              <IconsUser /> Made for you
+              <a href="#">
+                <IconsUser /> Made for you
+              </a>
             </li>
           </ul>
         </div>
       </div>
-      <div class="right-side">right</div>
+      <div class="right-side">
+        <div class="playlists">
+          <ul>
+            <li><img src="./assets/item.png" alt=""></li>
+            <li><img src="./assets/item.png" alt=""></li>
+            <li><img src="./assets/item.png" alt=""></li>
+            <li><img src="./assets/item.png" alt=""></li>
+            <li><img src="./assets/item.png" alt=""></li>
+            <li><img src="./assets/item.png" alt=""></li>
+            <li><img src="./assets/item.png" alt=""></li>
+            <li><img src="./assets/item.png" alt=""></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </template>
